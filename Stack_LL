@@ -88,3 +88,7 @@ public static void main(String[] args) {
   s.traversal();
 }
 }
+PUSH(S, n)
+    if IS_EMPTY(S) //stack is empty
+        S.head = n //new node is the head of the linked list
+        S.top = n //new node is the also the top
