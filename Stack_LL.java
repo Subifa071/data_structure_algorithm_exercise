@@ -1,4 +1,3 @@
-//Stack using Linked List
 class Node {
 public int data;
 public Node next;
@@ -13,14 +12,13 @@ class Stack_LL {
 public Node head;
 public Node top;
 
-public Stack() {
+public Stack_LL() {
   head = null;
   top = null;
 }
 
 public void traversal() {
-  Node temp = this.head; //temporary pointer to point to head
-
+  Node temp = this.head; //The head is a temporary pointer that points to the first node in the stack.
   while(temp != null) { //iterating over stack
     System.out.print(temp.data+"\t");
     temp = temp.next;
@@ -71,7 +69,7 @@ public int pop() {
 
 class StackMain {
 public static void main(String[] args) {
-  Stack s = new Stack();
+  Stack_LL s = new Stack_LL();
 
   Node a, b, c;
   a = new Node(10);
@@ -88,7 +86,3 @@ public static void main(String[] args) {
   s.traversal();
 }
 }
-PUSH(S, n)
-    if IS_EMPTY(S) //stack is empty
-        S.head = n //new node is the head of the linked list
-        S.top = n //new node is the also the top

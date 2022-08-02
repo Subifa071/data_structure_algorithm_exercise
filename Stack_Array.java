@@ -1,5 +1,5 @@
 //Stack using Array
-class Stack {
+class Stack_Array {
 public static int SIZE = 10;
 public static int top = 0;
 
