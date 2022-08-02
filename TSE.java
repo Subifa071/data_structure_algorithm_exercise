@@ -4,11 +4,11 @@ import java.util.Collections;
 
 public class TSE {
 
-  private final int N, start;
-  private final double[][] distance;
-  private List<Integer> tour = new ArrayList<>();
-  private double minTourCost = Double.POSITIVE_INFINITY;
-  private boolean ranSolver = false;
+   int N, start;
+   double[][] distance;
+   List<Integer> tour = new ArrayList<Integer>();
+   double minTourCost = Double.POSITIVE_INFINITY;
+   boolean ranSolver = false;
 
   public TSE(double[][] distance) {
     this(0, distance);
