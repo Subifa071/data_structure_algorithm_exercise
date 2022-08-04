@@ -51,37 +51,6 @@ class BinarySearchTree {
     }
   }
 
-  void deleteKey(int key) {
-    root = deleteRec(root, key);
-  }
-
-  Node deleteRec(Node root, int key) {
-    // Return if the tree is empty
-    if (root == null)
-      return root;
-
-    // Find the node to be deleted
-    if (key < root.key)
-      root.left = deleteRec(root.left, key);
-    else if (key > root.key)
-      root.right = deleteRec(root.right, key);
-    else {
-      // If the node is with only one child or no child
-      if (root.left == null)
-        return root.right;
-      else if (root.right == null)
-        return root.left;
-
-      // If the node has two children
-      // Place the inorder successor in position of the node to be deleted
-      root.key = minValue(root.right);
-
-      // Delete the inorder successor
-      root.right = deleteRec(root.right, root.key);
-    }
-
-    return root;
-  }
 
   // Find the inorder successor
   int minValue(Node root) {
@@ -109,9 +78,6 @@ class BinarySearchTree {
     System.out.print("Inorder traversal: ");
     tree.inorder();
 
-    System.out.println("\n\nAfter deleting 10");
-    tree.deleteKey(10);
-    System.out.print("Inorder traversal: ");
-    tree.inorder();
+    
   }
 }
