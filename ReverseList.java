@@ -2,9 +2,9 @@
 
 class ReverseList {
 
-	static Node head;
+	 static Node head;
 
-	static class Node {
+	 static class Node {
 
 		int data;
 		Node next;
