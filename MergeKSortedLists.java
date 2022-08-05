@@ -1,6 +1,14 @@
 // Java program to merge k sorted arrays of size n each
-public class MergeKSortedLists {
+	class Node {
+	int data;
+	Node next;
+	Node(int data)
+	{
+		this.data = data;
+	}
+}
 
+public class MergeKSortedLists {
 	/* Takes two lists sorted in increasing order, and merge
 	their nodes together to make one big sorted list. Below
 	function takes O(Log n) extra space for recursive calls,
@@ -94,12 +102,5 @@ public class MergeKSortedLists {
 	}
 }
 
-class Node {
-	int data;
-	Node next;
-	Node(int data)
-	{
-		this.data = data;
-	}
-}
-// This code is contributed by Gaurav Tiwari
+
+
